@@ -195,6 +195,54 @@ class MyProfileApp extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(height: 20.0), // Add spacing
+              const Text(
+                "Favourite Tracks",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18.0,
+                ),
+              ),
+              const SizedBox(height: 10.0), // Add spacing
+              Container(
+                padding: const EdgeInsets.all(16.0), // Add padding
+                decoration: BoxDecoration(
+                  color: Colors.grey[500],
+                  borderRadius:
+                      BorderRadius.circular(10.0), // Add border radius
+                ),
+                child: Row(
+                  children: <Widget>[
+                    const Column(
+                      children: <Widget>[
+                        Text(
+                          "03/09/2023",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15.0,
+                          ),
+                        ),
+                        Text(
+                          "Through the thrilling Kedarnath tracks",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 15.0,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(width: 20.0), // Add spacing
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(10.0),
+                      child: Image.asset(
+                        'assets/download.jpeg',
+                        width: 80.0,
+                        height: 80.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
