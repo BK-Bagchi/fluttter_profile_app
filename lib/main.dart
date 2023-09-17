@@ -25,14 +25,14 @@ class MyProfileApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Center(
+              const Center(
                 child: CircleAvatar(
                   radius: 40,
                   backgroundImage: AssetImage('assets/download.jpeg'),
                 ),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 'Balay Kumar Bagchi',
                 style: TextStyle(
                   color: Colors.white,
@@ -40,16 +40,16 @@ class MyProfileApp extends StatelessWidget {
                   fontSize: 22.0,
                 ),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 'Rajshahi, Bangladesh',
                 style: TextStyle(
                   color: Colors.blue,
                   fontSize: 15.0,
                 ),
               ),
-              SizedBox(height: 10.0),
-              Row(
+              const SizedBox(height: 10.0),
+              const Row(
                 children: <Widget>[
                   Icon(
                     Icons.star,
@@ -73,8 +73,8 @@ class MyProfileApp extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 20.0),
-              Text(
+              const SizedBox(height: 20.0),
+              const Text(
                 'Unworthy for Mjolnir',
                 style: TextStyle(
                   color: Colors.white,
@@ -82,15 +82,15 @@ class MyProfileApp extends StatelessWidget {
                   fontSize: 27.0,
                 ),
               ),
-              SizedBox(height: 10.0),
-              Text(
+              const SizedBox(height: 10.0),
+              const Text(
                 "We fight in the dark to serve the light. We are the assassins. - Ezio Auditore da Firenze. Ezio Auditore da Firenze, a young noble in Renaissance Italy, transformed into an Assassin after his family's betrayal. Guided by a hidden legacy, he embarked on a quest for vengeance, uncovering a greater purpose: to protect humanity's free will. His journey of redemption and justice defined him as an iconic Assassin.",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 12.0,
                 ),
               ),
-              SizedBox(height: 20.0), // Add spacing
+              const SizedBox(height: 20.0), // Add spacing
               ElevatedButton(
                 onPressed: () {
                   // Add your button click action here
