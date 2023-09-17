@@ -15,7 +15,7 @@ class MyProfileApp extends StatelessWidget {
       textDirection:
           TextDirection.ltr, // Set the text direction to left-to-right (LTR)
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey[800],
         appBar: AppBar(
           title: const Text('My Profile'),
           centerTitle: true,
@@ -46,7 +46,6 @@ class MyProfileApp extends StatelessWidget {
                 'Rajshahi, Bangladesh',
                 style: TextStyle(
                   color: Colors.blue,
-                  fontWeight: FontWeight.bold,
                   fontSize: 15.0,
                 ),
               ),
@@ -73,30 +72,25 @@ class MyProfileApp extends StatelessWidget {
                     Icons.star,
                     color: Colors.yellow,
                   ),
-                  SizedBox(width: 10.0),
                 ],
               ),
               SizedBox(height: 20.0),
-              Column(
-                children: <Widget>[
-                  Text(
-                    'Unworthy for Mjolnir',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24.0,
-                    ),
-                  ),
-                  Text(
-                    'We fight in the dark to serve the light. We are the assassins. - Ezio Auditore da Firenze',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 12.0,
-                    ),
-                  ),
-                ],
-              )
+              Text(
+                'Unworthy for Mjolnir',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 27.0,
+                ),
+              ),
+              SizedBox(height: 10.0),
+              Text(
+                "We fight in the dark to serve the light. We are the assassins. - Ezio Auditore da Firenze. Ezio Auditore da Firenze, a young noble in Renaissance Italy, transformed into an Assassin after his family's betrayal. Guided by a hidden legacy, he embarked on a quest for vengeance, uncovering a greater purpose: to protect humanity's free will. His journey of redemption and justice defined him as an iconic Assassin.",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 12.0,
+                ),
+              ),
             ],
           ),
         ),
