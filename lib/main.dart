@@ -12,8 +12,7 @@ class MyProfileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Directionality(
-      textDirection:
-          TextDirection.ltr, // Set the text direction to left-to-right (LTR)
+      textDirection: TextDirection.ltr,
       child: Scaffold(
         backgroundColor: Colors.grey[800],
         appBar: AppBar(
@@ -21,8 +20,8 @@ class MyProfileApp extends StatelessWidget {
           centerTitle: true,
           elevation: 0.0,
         ),
-        body: const Padding(
-          padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        body: Padding(
+          padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
@@ -90,6 +89,14 @@ class MyProfileApp extends StatelessWidget {
                   color: Colors.white,
                   fontSize: 12.0,
                 ),
+              ),
+              SizedBox(height: 20.0), // Add spacing
+              ElevatedButton(
+                onPressed: () {
+                  // Add your button click action here
+                  print('Button Clicked!');
+                },
+                child: Text('Follow'),
               ),
             ],
           ),
